@@ -4,7 +4,7 @@
 Centro Universitário de Viçosa – UNIVIÇOSA
 Professores: Anderson R. Lamas e Vanderlea Queiroz
 
-Estudante: Rhayane Freitas
+Estudante: Rhayane de Freitas Eloi
 Entrega: 30/09/2026
 
 ---
