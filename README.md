@@ -1,5 +1,8 @@
 # NOVABANK — Sistema de Registro e Gestão de Contas Bancárias
 
+> A **Etapa 2** (várias contas e histórico de movimentações) está na pasta
+> [`etapa2/`](etapa2/).
+
 **Etapa 1** do trabalho da disciplina **INF101 – Programação de Computadores I**
 Centro Universitário de Viçosa – UNIVIÇOSA
 Professores: Anderson R. Lamas e Vanderlea Queiroz
