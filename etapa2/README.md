@@ -139,10 +139,17 @@ transferência continua aparecendo no extrato da outra conta.
 - tipo 1 ou 2
 - saldo inicial pode ser zero, mas depósito, saque e transferência têm que ser
   maiores que zero, e nenhum valor passa de R$ 1000000000.00 por operação
-- o valor é lido como texto e conferido caractere por caractere, igual na Etapa 1,
-  porque o cin >> aceitava 1500,50 como 1500 e 2.000 como 2 reais sem avisar
+- tudo o que a pessoa digita é lido como texto, com o getline, e conferido
+  caractere por caractere antes de virar número. No valor em dinheiro foi porque
+  o cin >> aceitava 1500,50 como 1500 e 2.000 como 2 reais sem avisar; nos
+  números inteiros (menu, conta, tipo) foi porque uma letra travava o cin
 - letra onde era para ser número não trava o programa: no cadastro ele pergunta
   de novo, e no menu ou no número da conta ele avisa e volta para o menu
+- um número só vale se tiver de 1 a 9 algarismos e mais nada (sem espaço, sem
+  sinal de menos). Mais de 9 não cabe no int
+- no dinheiro vale só algarismo e um ponto ou vírgula, com até 2 casas depois
+  dele. Sinal de menos, letra ou dois separadores dão "Digite apenas números"
+- nas perguntas (S/N), só S ou s confirma; qualquer outra resposta cancela
 - quando chega em 100 contas ou 500 movimentações ele avisa em vez de gravar
   fora do vetor
 
@@ -192,13 +199,14 @@ registrarMovimentacao ganhou parâmetros, porque sem eles ela não teria como sa
 o que gravar.
 
 Também criei funções para os pedaços que na versão sem funções eu tive que copiar
-e colar várias vezes: lerInteiro() (lê um número sem travar com letra),
-lerValor() (o leitor de dinheiro da Etapa 1), buscarConta() (a busca
-sequencial), pedirConta() (pergunta o número, busca e avisa se não achou) e
-centavos() (passa reais para centavos inteiros). A ativarDesativarConta() e a
-excluirConta() são as opções 8 e 9.
-Na versão principal, por exemplo, o leitor de valor aparece duas vezes, e aqui
-ele existe uma vez só.
+e colar várias vezes: lerTexto() (lê a linha inteira que a pessoa digitou),
+lerNumero() (transforma o texto em número sem travar com letra), lerValor() (o
+leitor de dinheiro), buscarConta() (a busca sequencial), pedirConta() (pergunta
+o número, busca e avisa se não achou) e paraCentavos() (passa reais para
+centavos inteiros). A ativarDesativarConta() e a excluirConta() são as opções 8
+e 9.
+Na versão principal, por exemplo, a leitura de número aparece cinco vezes e a de
+dinheiro duas, e aqui cada uma existe uma vez só.
 
 ## Roteiro de teste
 
