@@ -2,6 +2,9 @@
 
 > A **Etapa 2** (várias contas e histórico de movimentações) está na pasta
 > [`etapa2/`](etapa2/).
+>
+> A **Etapa 3** (contas e movimentações salvas em arquivo) está na pasta
+> [`etapa3/`](etapa3/).
 
 **Etapa 1** do trabalho da disciplina **INF101 – Programação de Computadores I**
 Centro Universitário de Viçosa – UNIVIÇOSA
