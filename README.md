@@ -31,7 +31,7 @@ individuais.
 ## Estrutura do repositório
 
 ```
-sistema-bancario-etapa1/
+novabank/
 ├── src/
 │   ├── sistema_bancario.cpp   → Etapa 1: cadastro de 1 conta (variáveis individuais)
 │   └── desafio_5_contas.cpp   → Desafio 3.5: cadastro de até 5 contas (vetores)
