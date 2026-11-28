@@ -35,7 +35,13 @@ sistema-bancario-etapa1/
 ├── src/
 │   ├── sistema_bancario.cpp   → Etapa 1: cadastro de 1 conta (variáveis individuais)
 │   └── desafio_5_contas.cpp   → Desafio 3.5: cadastro de até 5 contas (vetores)
-├── bin/                        → executáveis gerados na compilação
+├── etapa2/                     → Etapa 2: várias contas e histórico (vetores e funções)
+│   ├── src/
+│   └── README.md
+├── etapa3/                     → Etapa 3: contas e movimentações salvas em arquivo
+│   ├── src/
+│   └── README.md
+├── bin/                        → executáveis gerados na compilação (fora do Git)
 └── README.md
 ```
 
